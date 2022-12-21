@@ -1,5 +1,8 @@
 let mobilenet
 let myImg;
+let width = 780
+let height = 600
+
 function modelReady(){
   console.log("Model is ready!")
 }
@@ -8,17 +11,12 @@ function preload(){
   console.log(ml5.version);
   myImg = loadImage("images/axolot.jpg");
   mobilenet = ml5.imageClassifier('MobileNet', modelReady())
-
-}
-
-function finishLoad(){
-  console.log("Image loaded")
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(width, height);
   mobilenet.classify(myImg, gotResult);
-  image(myImg, 0, 0);
+  image(myImg, 0, 0, width, height);
 }
 
 // function draw() {
