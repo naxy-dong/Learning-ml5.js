@@ -9,7 +9,7 @@ function modelReady(){
 
 function preload(){
   console.log(ml5.version);
-  myImg = loadImage("images/axolot.jpg");
+  myImg = loadImage("images/house.jpg");
   mobilenet = ml5.imageClassifier('MobileNet', modelReady())
 }
 
