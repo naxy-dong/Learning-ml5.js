@@ -1,3 +1,10 @@
+// const express = require('express')
+// const app = express()
+
+// app.listen(8080, () => {
+//   console.log('FARM STAND APP LISTENING on PORT 8080!')
+// })
+
 let mobilenet
 let myImg;
 let width = 780
@@ -9,7 +16,9 @@ function modelReady(){
 
 function preload(){
   console.log(ml5.version);
-  myImg = loadImage("images/house.jpg");
+  src = "images/axolot.jpg"
+  console.log(src)
+  myImg = loadImage(src);
   mobilenet = ml5.imageClassifier('MobileNet', modelReady())
 }
 
@@ -18,10 +27,6 @@ function setup() {
   mobilenet.classify(myImg, gotResult);
   image(myImg, 0, 0, width, height);
 }
-
-// function draw() {
-//   background(220);
-// }
 
 function gotResult(error, results){
   if(error){
