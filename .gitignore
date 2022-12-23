@@ -1,4 +1,6 @@
 # ignore all node module
 node_modules/*
 
-node_module
+node_modules
+
+/node_modules
