@@ -1,0 +1,24 @@
+{
+  "name": "Learning-ml5.js",
+  "version": "1.0.0",
+  "description": "This is my learning for ml5.js in preparation of robotics.",
+  "main": "sketch.js",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naxy-dong/Learning-ml5.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naxy-dong/Learning-ml5.js/issues"
+  },
+  "homepage": "https://github.com/naxy-dong/Learning-ml5.js#readme"
+}
