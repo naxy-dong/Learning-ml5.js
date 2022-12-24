@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+canvas {
+  display: block;
+}
+
+body{
+  text-align: center;
+}
+
+.card{
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.thumb {
+  width: 8rem;
+}
+
+.arrow {
+  width: 6rem;
+}
+
+#caption {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+main{
+  display: none;
+}

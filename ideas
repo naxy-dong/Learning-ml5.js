@@ -1,4 +1,4 @@
 Different ways to let the mobilenet classify the image 
-1. You can drag & drop the image  
-2. You can draw on the canvas
-3. Classify the image from the camera
+1. You can drag & drop the image                --- working on it
+2. You can draw on the canvas                   --- PENDING
+3. Classify the image from the camera           --- DONE
