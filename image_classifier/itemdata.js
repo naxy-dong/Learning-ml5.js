@@ -1,3 +1,14 @@
 pageTitle = "ml5.js: Image Classifier using mobilenet"; 
 
-itemList = [{itemName:"Rax", itemInfo:"Rax was a dragon scout who was betrayed by one of his own. Killed before his time,Rax returned as a skeleton to continue the fight.", itemImage:"rax copy.png"}, {itemName: "Ash", itemInfo:"Horn in flame, Ash uses the heat of his body to wound his enemies.", itemImage:"ash copy.png"}, {itemName:"Harnabas", itemInfo: "Barnabas is the oldest and most respected of the dragons. He is wise beyond mortal years.", itemImage:"barnabas copy.png"}, {itemName:"Drake", itemInfo:"Master of the flame, Drake can firea molten jet at distant enemies.", itemImage:"drake copy.png"}, {itemName:"Endisun", itemInfo: "With electricity coursing through his body at all times, Endisun is not only a deadly foe, but he can shoot into and out of the field of battle without his opponents even noticing.", itemImage:"endisun copy.png"}, { itemName:"Lunar", itemInfo:"Lunar's magical healing abilities makes her a formidable opponent.", itemImage:"lunar copy.png"}];
+itemList = [
+{itemName:"Rax", itemInfo:"Rax was a dragon scout who was betrayed by one of his own. Killed before his time,Rax returned as a skeleton to continue the fight.", itemImage:"rax copy.png"},
+{itemName: "Ash", itemInfo:"Horn in flame, Ash uses the heat of his body to wound his enemies.", itemImage:"ash copy.png"}, 
+{itemName:"Barnabas", itemInfo: "Barnabas is the oldest and most respected of the dragons. He is wise beyond mortal years.", itemImage:"barnabas copy.png"}, 
+{itemName:"Drake", itemInfo:"Master of the flame, Drake can firea molten jet at distant enemies.", itemImage:"drake copy.png"}, 
+{itemName:"Endisun", itemInfo: "With electricity coursing through his body at all times, Endisun is not only a deadly foe, but he can shoot into and out of the field of battle without his opponents even noticing.", itemImage:"endisun copy.png"}, 
+{itemName:"Lunar", itemInfo:"Lunar's magical healing abilities makes her a formidable opponent.", itemImage:"lunar copy.png"},
+{itemImage:"axolot.jpg"},
+{itemImage:"house.jpg"},
+{itemImage:"asriel.jpg"},
+{itemImage:"undertale.jpg"}
+];

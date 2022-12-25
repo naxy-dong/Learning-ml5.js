@@ -1,4 +1,6 @@
 Different ways to let the mobilenet classify the image 
 1. You can drag & drop the image                --- working on it
-2. You can draw on the canvas                   --- PENDING
-3. Classify the image from the camera           --- DONE
+2. Object detection with images                 --- Pending
+3. You can draw on the canvas                   --- PENDING
+4. Classify the image from the camera           --- DONE
+5. Expanding image classification to add functionality to object detection   ---- PENDING

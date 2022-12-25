@@ -13,9 +13,10 @@ function initialize()
 }
 function display()
 {
-    mainImage.src = "images/" + itemList[currentItemIdx].itemImage;
-    captionOutput.innerHTML = itemList[currentItemIdx].itemName;
-    infoOutput.innerHTML = itemList[currentItemIdx].itemInfo;
+    relativesrc = itemList[currentItemIdx].itemImage
+    mainImage.src = "images/" + relativesrc;
+    captionOutput.innerHTML = itemList[currentItemIdx].itemName == null ? relativesrc.substring(0,relativesrc.lastIndexOf(".")) : itemList[currentItemIdx].itemName;
+    infoOutput.innerHTML = itemList[currentItemIdx].itemInfo == null ? "no information found" : itemList[currentItemIdx].itemInfo;
     label.innerText = "Label: "
     confidence.innerText = "Confidence: "
     for(var i = 0; i < itemThumbs.length; i++)
@@ -24,13 +25,10 @@ function display()
 function moveOffset(mod)
 {
     offset += mod;
-    
     if(offset < 0)
         offset = 0;
-        
     if (offset >= itemList.length - 3)
         offset = itemList.length - 3;
-        
     display();
 }
 function selectItem(idx)

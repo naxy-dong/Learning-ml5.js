@@ -30,7 +30,6 @@ function modelReady() {
 function setup() {
   mainImage = document.getElementById("mainimg");
   mobilenet = ml5.imageClassifier('MobileNet', modelReady())
-
 }
 
 function classify() {
@@ -45,7 +44,6 @@ function gotResult(error, results) {
     console.log(error)
   }
   else{
-    console.log(results)
     label.innerText = `Label: ${results[0].label}, ${results[1].label},  ${results[2].label}`
     confidence.innerText = 'Confidence: ' + nf(results[0].confidence, 0, 2);
   }
