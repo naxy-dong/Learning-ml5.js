@@ -14,13 +14,13 @@ function initialize()
 function display()
 {
     relativesrc = itemList[currentItemIdx].itemImage
-    mainImage.src = "images/" + relativesrc;
+    mainImage.src = "../assets/images/" + relativesrc;
     captionOutput.innerHTML = itemList[currentItemIdx].itemName == null ? relativesrc.substring(0,relativesrc.lastIndexOf(".")) : itemList[currentItemIdx].itemName;
     infoOutput.innerHTML = itemList[currentItemIdx].itemInfo == null ? "no information found" : itemList[currentItemIdx].itemInfo;
     label.innerText = "Label: "
     confidence.innerText = "Confidence: "
     for(var i = 0; i < itemThumbs.length; i++)
-        itemThumbs[i].src = "images/" + itemList[i + offset].itemImage;
+        itemThumbs[i].src = "../assets/images/" + itemList[i + offset].itemImage;
 }
 function moveOffset(mod)
 {
