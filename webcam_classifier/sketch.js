@@ -1,7 +1,7 @@
 let mobilenet
 let myImg;
-let width = 680
-let height = 540
+// let width = 680
+// let height = 540
 let div1
 let div2
 
@@ -21,9 +21,10 @@ function gotResult(error, results) {
 }
 
 function setup() {
-    canvas = createCanvas(width, height);
-    canvas.hide()
+    // canvas = createCanvas(width, height);
+    // canvas.hide()
     video = createCapture(VIDEO)
+    video.center()
     // video.hide();
     div1 = createDiv()
     div2 = createDiv()

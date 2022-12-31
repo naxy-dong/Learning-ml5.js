@@ -23,25 +23,25 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload="initialize()">
+<body onload="initialize()" class = "bg-dark">
   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
     <div class="container-fluid">
       <a class="border border-success-subtle border-4 rounded-3  navbar-brand" href="../index.html" style="padding: 5px">
         <img src="../favicon_io/apple-touch-icon.png" alt="Logo" width="32" height="32"
           class="d-inline-block align-text-top">
-          <b>Home</b>
+          <span class="text-white">Home</span>
       </a>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <span id="pagetitle" class="fw-bold"></span>
+            <span id="pagetitle" class="fw-bold text-white"></span>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="card mb-3" style="max-width: 75%;">
+  <div class="card mb-3 border border-2 border-success" style="max-width: 75%;">
     <div class="row g-0">
       <div class="col-md-6">
         <img id="mainimg" class="img-fluid rounded-start">
@@ -53,7 +53,7 @@
           <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
           <button type="button" class="btn btn-primary btn-lg" onclick="classify()">Classify!</button>
           <div id="card" class="card text-center" style="width: 100%; margin-top: 10px">
-            <div class="card-body">
+            <div class="card-body border border-5 border-secondary">
               <h5 class="card-title">Classified Result</h5>
               <div id="label" class="card-text text-start">dslkafjasdklf</div>
               <div id="confidence" class="card-text text-start">dslkafjasdklf</div>

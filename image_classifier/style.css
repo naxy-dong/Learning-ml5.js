@@ -1,8 +1,8 @@
-html,
-body {
+html,body {
   margin: 0;
   padding: 0;
   background-color:aliceblue;
+  min-height: 100vh;  /* For responsiveness, always use min-height: 100vh!! No height: 100%; */
 }
 
 canvas {

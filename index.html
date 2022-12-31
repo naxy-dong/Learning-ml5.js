@@ -5,7 +5,7 @@
   <!-- Metadata -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" />
-  <title>Learning Hub</title>
+  <title>ML5 learning hub</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -14,29 +14,33 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
-  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
 
-<body >
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid">
-      <a class="border border-success-subtle border-4 rounded-3  navbar-brand" href="./index.html" style="padding: 5px">
+<body class="bg-dark text-white">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid text-white">
+      <a class="border border-success-subtle border-4 rounded-3 navbar-brand" href="./index.html" style="padding: 5px">
         <img src="./favicon_io/apple-touch-icon.png" alt="Logo" width="32" height="32"
           class="d-inline-block align-text-top">
-          <b>Home</b>
+        <span class="text-white">Home</span>
       </a>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <b>Learning Hub</b>
+            <!-- <b>Learning Hub</b> -->
+            <a class="nav-link disabled"><b class="text-white">Learning Hub</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./">About</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
+
   <h1>Experiment hub</h1>
-  future tasks: Added bootstrap: Write a description You can test out machine learning in these websites
   <ul>
     <li><a href="image_classifier/index.html">image classifier</a></li>
     <ul>
@@ -49,6 +53,26 @@
     <li><a href="webcam_classifier/index.html">webcam classifer</a></li>
     <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">very cool website</a></li>
   </ul>
+
+
+                              <!-- The footer / social media -->
+  <footer class="text-center text-lg-start text-white">
+    <div class="container p-4 pb-0">
+      <hr class="mb-4" />
+      <!-- Section: Social media -->
+      <section class="mb-4 text-center">
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="mailto:yuxiang.dong@stonybrook.edu" role="button" style = "border-radius:50%"><i class="fab fa-google"></i></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/yuxiangd/" role="button"style = "border-radius:50%"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/naxy-dong" role="button"style = "border-radius:50%"><i class="fab fa-github"></i></a>
+        <!-- Discord -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://discordapp.com/users/539630761947693076" role="button"style = "border-radius:50%"><i class="fab fa-discord"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+  </footer>
 </body>
 
 </html>
