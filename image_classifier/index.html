@@ -23,13 +23,15 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload="initialize()" class = "bg-dark">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<body onload="initialize()" class="bg-dark">
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="border border-success-subtle border-4 rounded-3  navbar-brand" href="../index.html" style="padding: 5px">
+      <a class="border border-success-subtle border-4 rounded-3  navbar-brand" href="../index.html"
+        style="padding: 5px">
         <img src="../favicon_io/apple-touch-icon.png" alt="Logo" width="32" height="32"
           class="d-inline-block align-text-top">
-          <span class="text-white">Home</span>
+        <span class="text-white">Home</span>
       </a>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -40,8 +42,10 @@
       </div>
     </div>
   </nav>
+  <!-- Nav Bar -->
 
-  <div class="card mb-3 border border-2 border-success" style="max-width: 75%;">
+  <!-- Card -->
+  <div class="card mb-3 border border-2 border-success mt-3" style="max-width: 75%;">
     <div class="row g-0">
       <div class="col-md-6">
         <img id="mainimg" class="img-fluid rounded-start">
@@ -63,14 +67,17 @@
       </div>
     </div>
   </div>
+  <!-- Card -->
 
-  <hr />
+  <!-- Selections -->
   <img class="arrow" src="images/backward.png" onclick="moveOffset(-1)" />
   <img class="thumb" onclick="selectItem(0);" />
   <img class="thumb" onclick="selectItem(1);" />
   <img class="thumb" onclick="selectItem(2);" />
   <img class="arrow" src="images/forward.png" onclick="moveOffset(1)" />
   <!-- <input type = "file" id = "image_input" accept="image/png, image/jpg"> -->
+  <!-- Selections -->
+
   <!-- Scripts -->
   <script src="itemdata.js"></script>
   <script src=menu.js></script>
@@ -78,6 +85,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <!-- Scripts -->
 </body>
 
 </html>
