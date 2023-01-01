@@ -18,12 +18,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
-  <title>Image Classifier</title>
+  <title>Object Detector</title>
   <!-- custom CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload="initialize()" class="bg-dark">
+<body class="bg-dark">
   <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -47,20 +47,20 @@
   <!-- Card -->
   <div class="card mb-3 border border-2 border-success mt-3" style="max-width: 75%;">
     <div class="row g-0">
-      <div class="col-md-6">
-        <img id="mainimg" class="img-fluid rounded-start">
+      <div id = "canvas-div" class="col-md-6">
+        <!-- <img id="mainimg" class="img-fluid rounded-start"> -->
       </div>
       <div class="col-md-6">
         <div class="card-body">
           <h5 id="caption" class="card-title"></h5>
           <p id="info" class="card-text text-start"></p>
           <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-          <button type="button" class="btn btn-primary btn-lg" onclick="classify()">Classify!</button>
+          <button type="button" class="btn btn-primary btn-lg" onclick="detect()">Detect!</button>
           <div id="card" class="card text-center" style="width: 100%; margin-top: 10px">
             <div class="card-body border border-5 border-secondary">
-              <h5 class="card-title">Classified Result</h5>
-              <div id="label" class="card-text text-start">dslkafjasdklf</div>
-              <div id="confidence" class="card-text text-start">dslkafjasdklf</div>
+              <h5 class="card-title">Object Detected</h5>
+              <div id="label" class="card-text text-start"></div>
+              <div id="confidence" class="card-text text-start"></div>
             </div>
           </div>
         </div>
@@ -81,7 +81,6 @@
   <!-- Scripts -->
   <script src="itemdata.js"></script>
   <script src="menu.js"></script>
-  <script src="sketch.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

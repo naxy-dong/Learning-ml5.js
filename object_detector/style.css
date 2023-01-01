@@ -1,0 +1,35 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  background-color:aliceblue;
+  min-height: 100vh;  /* For responsiveness, always use min-height: 100vh!! No height: 100%; */
+}
+
+canvas {
+  width: 100% !important;
+  display: block !important;
+}
+
+body{
+  text-align: center;
+}
+
+.card{
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.thumb {
+  width: 8rem;
+}
+
+.arrow {
+  width: 6rem;
+}
+
+#caption {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
