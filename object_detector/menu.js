@@ -1,3 +1,4 @@
+pageTitle = "ml5.js: Object Detector using mobilenet"; 
 let detector
 let myImg;
 let label
@@ -13,6 +14,7 @@ function modelReady() {
 }
 
 function detect() {
+    console.log("Detecting... Please wait...")
     detector.detect(myImg, gotResult);
 }
 
@@ -21,12 +23,20 @@ function gotResult(error, results) {
         console.log(error)
     }
     else {
+        console.log("detected");
+        console.log(results);
+
+        if(results.length == 0){
+            label.innerText = "Nothing Detected";
+            confidence.innerText = 'Confidence: 100%';
+        }
+
         for(let i = 0; i < results.length; i++){
-            let obj = result[i];
+            let obj = results[i];
             stroke(0,255,0);
             strokeWeight(4);
             noFill();
-            rect(obj.x, obj.y, obj.width, obj,height)
+            rect(obj.x, obj.y + (canvas_div.clientHeight - myImg.height)/2, obj.width, obj.height)
             // label.innerText = `Label: ${results[0].label}, ${results[1].label},  ${results[2].label}`
             // confidence.innerText = 'Confidence: ' + nf(results[0].confidence, 0, 2);
             console.log(obj);
@@ -37,7 +47,6 @@ function gotResult(error, results) {
 /*************************Interface/UI/p5 stuff****************************/
 function preload() {
     detector = ml5.objectDetector('cocossd', modelReady)
-
     captionOutput = document.getElementById("caption");
     infoOutput = document.getElementById("info");
     itemThumbs = document.getElementsByClassName("thumb");
@@ -70,6 +79,7 @@ function setup(){
     canvas_div = document.getElementById("canvas-div")
     canvas = createCanvas(canvas_div.clientWidth, canvas_div.clientHeight);
     canvas.parent("canvas-div");
+    // getContext('2d', { willReadFrequently: true });
     drawImage();
 }
 
@@ -95,6 +105,7 @@ function moveOffset(mod) {
         offset = itemList.length - 3;
     display();
 }
+
 function selectItem(idx) {
     currentItemIdx = idx + offset;
     display();

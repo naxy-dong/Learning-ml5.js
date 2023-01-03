@@ -1,3 +1,5 @@
+pageTitle = "ml5.js: Image Classifier using mobilenet"; 
+
 function initialize()
 {
     mainImage = document.getElementById("mainimg");
